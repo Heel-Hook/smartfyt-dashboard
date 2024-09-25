@@ -3,13 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartFyt Design</title>
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        iframe { width: 100%; height: 100%; border: none; }
-    </style>
+    <title>SmartFyt Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FwVi4NFwHPDFzUhzdj2I4Al%2FSmartFyt-Pages-Updated-Text%3Fnode-id%3D2001-299%26t%3DSr4QrbqJqGa4GQMR-1" allowfullscreen></iframe>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Metrics</a></li>
+                <li><a href="#">Goals</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <section class="performance-metrics">
+                <h2>Performance Metrics</h2>
+                <div class="metric-card" id="focus-score">
+                    <h3>Focus Score</h3>
+                    <p>80% Completed</p>
+                    <p>20% Remaining</p>
+                    <p>Status: Excellent</p>
+                    <p>7-day trend: +10%</p>
+                    <p>A higher Focus Score indicates better cognitive performance, helping you stay sharp during study sessions...</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="metric-card" id="effort-score">
+                    <h3>Effort Score</h3>
+                    <p>50% Completed</p>
+                    <p>50% Remaining</p>
+                    <p>Status: Average</p>
+                    <p>7-day trend: +5%</p>
+                    <p>A higher Effort Score means you are effectively managing your workload and staying engaged in both...</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="metric-card" id="readiness-score">
+                    <h3>Readiness Score</h3>
+                    <p>50% Completed</p>
+                    <p>50% Remaining</p>
+                    <p>Status: Average</p>
+                    <p>7-day trend: +5%</p>
+                    <p>A higher Readiness Score indicates that you are well-prepared for academic and athletic challenges...</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="metric-card" id="motivation-score">
+                    <h3>Motivation Score</h3>
+                    <p>33% Completed</p>
+                    <p>67% Remaining</p>
+                    <p>Status: Deficient</p>
+                    <p>7-day trend: -3%</p>
+                    <p>A higher Motivation Score suggests that you are maintaining a balanced approach to your studies and...</p>
+                    <a href="#">View Details</a>
+                </div>
+            </section>
+
+            <section class="daily-snapshot">
+                <h2>Daily Snapshot</h2>
+                <div class="snapshot-grid">
+                    <div class="snapshot-item">
+                        <h4>Total Study Time</h4>
+                        <p>2 Hours</p>
+                    </div>
+                    <div class="snapshot-item">
+                        <h4>Total Workout Time</h4>
+                        <p>1 Hour</p>
+                    </div>
+                    <div class="snapshot-item">
+                        <h4>Hours of Sleep</h4>
+                        <p>8 Hours</p>
+                    </div>
+                    <div class="snapshot-item">
+                        <h4>Current Stress Level</h4>
+                        <p>High</p>
+                    </div>
+                    <div class="snapshot-item">
+                        <h4>Resting HR Today</h4>
+                        <p>60 bpm</p>
+                    </div>
+                    <div class="snapshot-item">
+                        <h4>Daily Steps</h4>
+                        <p>7,343 / 10,000</p>
+                    </div>
+                    <div class="snapshot-item">
+                        <h4>Goals Completed</h4>
+                        <p>4/6</p>
+                    </div>
+                    <div class="snapshot-item">
+                        <h4>Class Attendance</h4>
+                        <p>3/3</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="goals">
+                <h2>Goal Progress</h2>
+                <div class="goal-item">
+                    <h4>Academic Goal</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="goal-item">
+                    <h4>Athletic Goal</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="goal-item">
+                    <h4>Wellness Goal</h4>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <a href="#" class="view-all">View All Goals</a>
+            </section>
+
+            <section class="insights">
+                <h2>Personalized Insights</h2>
+                <div class="insight-card">
+                    <h3>Insight 1</h3>
+                    <p>Based on your recent data, we've identified opportunities to enhance your study efficiency. Your Focus Score indicates that you might benefit from shorter, more frequent study sessions.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="insight-card">
+                    <h3>Insight 2</h3>
+                    <p>Your Effort Score suggests that incorporating more varied workouts could enhance your athletic performance. Diversifying your routine can help prevent burnout and improve overall fitness.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </section>
+
+            <section class="recent-activities">
+                <div class="leaderboard">
+                    <h2>School Leaderboard</h2>
+                    <ol>
+                        <li>David Anderson - 5000 pts</li>
+                        <li>Sarah Patel - 4120 pts</li>
+                        <li>Michael Thompson - 3200 pts</li>
+                        <li>Emma Collins - 2700 pts</li>
+                        <li>Joshua Lee - 2290 pts</li>
+                    </ol>
+                    <a href="#" class="view-all">View Full Leaderboard</a>
+                </div>
+                <div class="achievements">
+                    <h2>Recent Achievements</h2>
+                    <ul>
+                        <li>Step Champion - +250 XP</li>
+                        <li>Iron Warrior - +180 XP</li>
+                        <li>Cardio King - +250 XP</li>
+                    </ul>
+                    <a href="#" class="view-all">View All Achievements</a>
+                </div>
+                <div class="team-battle">
+                    <h2>Team Battle</h2>
+                    <p>2 Days 4 Hours</p>
+                    <p>Wrestling vs. Basketball</p>
+                    <button>Contribute Now</button>
+                    <p>+250 Points</p>
+                </div>
+                <div class="activity-log">
+                    <h2>Recent Activity</h2>
+                    <button class="log-activity-btn">Log New Activity</button>
+                    <ul>
+                        <li>Workout - +50 points - 2 hours ago</li>
+                        <li>Study - +10 points - 7 hours ago</li>
+                        <li>Workout - +30 points - 11 hours ago</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
